@@ -1,0 +1,80 @@
+/* Bloque principal */
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+/* Elementos del bloque */
+.education__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.education__content {
+}
+
+.education__icon {
+  display: none;
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: var(--color-gold-light);
+}
+
+.education__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.education__institution {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.education__status {
+}
+
+.education__year {
+  font-size: 0.875rem;
+}
+
+@media (width >= 640px){
+  .education__institution {
+    font-size: 1.125rem;
+  }
+}
+
+@media (width >= 768px) {
+
+  .education__list {
+    gap: 1.5rem;
+  }
+
+  .education__icon {
+    display: block;
+  }
+
+  .education__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .education__content {
+    display: flex;
+    gap: 0.5rem;
+  }
+}

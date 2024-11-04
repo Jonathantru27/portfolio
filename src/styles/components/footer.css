@@ -1,0 +1,53 @@
+/* Bloque principal */
+.footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Elementos del bloque */
+.footer__text {
+  display: flex;
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  gap: 0.5rem;
+}
+
+.footer__title {
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.footer__title--highlight {
+  color: var(--color-gold-light)
+}
+
+.footer__copyright {
+  opacity: 0.65;
+}
+
+.footer__credits {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  opacity: 0.65;
+}
+
+.footer__link {
+  color: var(--color-gold-light);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  border-bottom: 1px dotted var(--color-gold-light);
+}
+
+@media(width >= 640px){
+  .footer__text {
+    font-size: 1.25rem;
+  }
+  
+}

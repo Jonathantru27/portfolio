@@ -1,0 +1,119 @@
+/* Bloque principal */
+
+.experience {
+  --title-size: 1.125rem;
+  --dot-size: 0.65rem;
+  --gap-items: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+/* Título de cada sección de experiencia */
+.experience__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.experience__title:last-child {
+  margin-top: 2rem;
+}
+
+/* Lista de elementos de experiencia */
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-items);
+}
+
+/* Elemento individual de experiencia */
+.experience__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Año en cada experiencia */
+.experience__year {
+  width: 100%;
+  max-width: 2.5rem;
+  --font-sise: 0.875rem;
+  font-size: 0.875rem;
+  margin-top: calc((var(--title-size) - var(--font-sise)) / 2);
+}
+
+/* Punto decorativo */
+.experience__dot {
+  display: none;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  background: var(--color-gold-light);
+  border-radius: 50%;
+  margin-top: calc((var(--title-size) - var(--dot-size)) / 2);
+}
+
+/* Contenedor de los detalles de cada experiencia */
+.experience__details {
+  --gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  position: relative;
+}
+
+.experience__details::before {
+  display: none;
+  --weigth-line: 2px;
+  position: absolute;
+  content: "";
+  width: var(--weigth-line);
+  height: calc(100% - var(--dot-size));
+  background: var(--color-gold-light);
+  left: calc(
+    (var(--gap) + (var(--dot-size) / 2) + (var(--weigth-line) / 2)) * -1
+  );
+  top: calc(var(--dot-size) * 2);
+}
+
+/* Nombre de la obra o proyecto */
+.experience__name {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Detalle del director (para experiencia teatral) */
+.experience__director {
+}
+
+/* Rol o tipo de trabajo en la experiencia (para experiencia audiovisual) */
+.experience__role {
+}
+
+@media(width >= 640px) {
+  .experience__name {
+    font-size: 1.125rem;
+  }
+
+}
+
+@media (width >= 768px) {
+  .experience__item {
+    flex-direction: row;
+  }
+
+  .experience__dot {
+    display: block;
+  }
+
+  .experience__details::before {
+    display: block;
+  }
+}
+
+
+@media (width >= 1024px) {
+  .experience {
+    --gap-items: 1.5rem;
+  }
+}

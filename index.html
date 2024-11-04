@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Jonathan Trucios</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <div class="header__logo-icon">J</div>
+        <a href="#" class="header__logo-link">Jonathan</a>
+      </div>
+      <button class="header__menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#sobre-mi" class="header__menu-link">Sobre mí</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#experiencia" class="header__menu-link">Experiencia</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#formacion" class="header__menu-link">Formación</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contacto" class="header__menu-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container" id="hero">
+        <div class="hero__profile" id="profile">
+          <span class="hero__name animate__animated">Jonathan</span>
+          <img
+            src="./public/images/profile-picture.png"
+            alt="profile-picture"
+            class="hero__image"
+            id="profileImage"
+          />
+        </div>
+      
+        <div class="hero__info">
+          <div class="hero__titles animate__animated" id="heroTitles">
+            <h1 class="hero__title" id="heroTitle">
+              Jonathan <span class="hero__title--highlight">Trucios</span>
+            </h1>
+            <h3 class="hero__subtitle" id="heroSubtitle">Actor</h3>
+          </div>
+      
+          <p class="hero__description animate__animated" id="heroDescription">
+            Actor con experiencia en teatro, especializado en interpretar
+            personajes complejos y auténticos. Siempre en busca de nuevos retos
+            escénicos para conectar con el público y transmitir emociones.
+            Descubre mi trayectoria y los proyectos que han definido mi camino
+            en el arte dramático.
+          </p>
+          <a href="/public/pdfs/JONATHAN-TRUCIOS.pdf" target="_blank" class="hero__cta">
+            CURRICULUM
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      
+      <section class="about container" id="sobre-mi">
+        <div class="about__main">
+          <div class="about__image">
+            <img
+              src="./public/images/about-image.png"
+              alt="Imagen de un actor"
+            />
+          </div>
+          <div class="about__info animate__animated">
+            <h2 class="about__title">Acerca de mí</h2>
+            <p class="about__description">
+              Soy un actor que disfruta explorar la complejidad de los personajes en el escenario. La actuación es mi forma de conectar con el mundo y compartir historias que resuenan con la audiencia. Me encanta enfrentar nuevos retos que me empujen a salir de mi zona de confort y me permitan crecer como artista. Aquí podrás ver mi camino en el teatro y los proyectos que me han dejado huella.
+            </p>
+
+            <div class="about__resume">
+              <div class="about__data">
+                <h3 class="about__subtitle">Datos</h3>
+                <ul class="about__list">
+                  <li class="about__list-item">
+                    <span class="about__label">Altura:</span> 176cm
+                  </li>
+                  <li class="about__list-item">
+                    <span class="about__label">Nacimiento:</span> 01/01/1997
+                  </li>
+                  <li class="about__list-item">
+                    <span class="about__label">Color de piel:</span> Clara
+                  </li>
+                  <li class="about__list-item">
+                    <span class="about__label">Color de ojos:</span> Marrón
+                    oscuro
+                  </li>
+                  <li class="about__list-item">
+                    <span class="about__label">Cabello:</span> Marrón oscuro
+                  </li>
+                  <li class="about__list-item">
+                    <span class="about__label">Nacionalidad:</span> Peruana
+                  </li>
+                </ul>
+              </div>
+
+              <div class="about__extra-data">
+                <div class="about__skills">
+                  <h3 class="about__subtitle">Habilidades</h3>
+                  <ul class="about__list">
+                    <li class="about__list-item">Canto</li>
+                    <li class="about__list-item">Acento neutro</li>
+                  </ul>
+                </div>
+
+                <div class="about__languages">
+                  <h3 class="about__subtitle">Idiomas</h3>
+                  <ul class="about__list">
+                    <li class="about__list-item">Español Nativo</li>
+                    <li class="about__list-item">Inglés Intermedio</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="slider"
+          reverse="true"
+          style="--width: 200px; --height: 280px; --quantity: 7"
+        >
+          <div class="slider__list">
+            <div class="slider__item" style="--position: 1">
+              <img src="./public/images/slider1.jpg" alt="" />
+            </div>
+            <div class="slider__item" style="--position: 2">
+              <img src="./public/images/slider2.jpg" alt="" />
+            </div>
+            <div class="slider__item" style="--position: 3">
+              <img src="./public/images/slider3.jpg" alt="" />
+            </div>
+            <div class="slider__item" style="--position: 4">
+              <img src="./public/images/slider4.jpg" alt="" />
+            </div>
+            <div class="slider__item" style="--position: 5">
+              <img src="./public/images/slider5.jpg" alt="" />
+            </div>
+            <div class="slider__item" style="--position: 6">
+              <img src="./public/images/slider6.jpg" alt="" />
+            </div>
+            <div class="slider__item" style="--position: 7">
+              <img src="./public/images/slider7.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-white">
+        <div class="trayectory-container">
+          <section class="experience container" id="experiencia">
+            <h2 class="experience__title">Experiencia Teatral</h2>
+            <ul class="experience__list">
+              <li class="experience__item">
+                <div class="experience__year">2024</div>
+                <div class="experience__dot"></div>
+                <div class="experience__details">
+                  <h3 class="experience__name">
+                    Blancanieves, historia de un príncipe
+                  </h3>
+                  <span class="experience__director"
+                    >Dirigido por Percy Encinas</span
+                  >
+                </div>
+              </li>
+              <li class="experience__item">
+                <div class="experience__year">2024</div>
+                <div class="experience__dot"></div>
+                <div class="experience__details">
+                  <h3 class="experience__name">Extremófilo</h3>
+                  <span class="experience__director"
+                    >Dirigido por Percy Encinas</span
+                  >
+                </div>
+              </li>
+              <li class="experience__item">
+                <div class="experience__year">2024</div>
+                <div class="experience__dot"></div>
+                <div class="experience__details">
+                  <h3 class="experience__name">Burn baby burn</h3>
+                  <span class="experience__director"
+                    >Dirigido por Yasmine Incháustegui</span
+                  >
+                </div>
+              </li>
+              <li class="experience__item">
+                <div class="experience__year">2021</div>
+                <div class="experience__dot"></div>
+                <div class="experience__details">
+                  <h3 class="experience__name">
+                    Proclamación de la Independencia
+                  </h3>
+                  <span class="experience__director"
+                    >Dirigido por Pamela Lloclla</span
+                  >
+                </div>
+              </li>
+              <li class="experience__item">
+                <div class="experience__year">2020</div>
+                <div class="experience__dot"></div>
+                <div class="experience__details">
+                  <h3 class="experience__name">Enlaces</h3>
+                  <span class="experience__director"
+                    >Dirigido por Victor Prada, Joaquin Escobar y Raúl Sanchez
+                    McMillan</span
+                  >
+                </div>
+              </li>
+              <li class="experience__item">
+                <div class="experience__year">2019</div>
+                <div class="experience__dot"></div>
+                <div class="experience__details">
+                  <h3 class="experience__name">Sueltos en casa</h3>
+                  <span class="experience__director"
+                    >Producido por RECUENTO PRODUCCIONES</span
+                  >
+                </div>
+              </li>
+              <li class="experience__item">
+                <div class="experience__year">2018</div>
+                <div class="experience__dot"></div>
+                <div class="experience__details">
+                  <h3 class="experience__name">Woyzeck</h3>
+                  <span class="experience__director"
+                    >Dirigido por Dante Fabrizio Marchino Checa</span
+                  >
+                </div>
+              </li>
+            </ul>
+
+            <h2 class="experience__title">Experiencia Audiovisual</h2>
+            <ul class="experience__list">
+              <li class="experience__item">
+                <div class="experience__year">2018</div>
+                <div class="experience__dot"></div>
+                <div class="experience__details">
+                  <h3 class="experience__name">Woyzeck</h3>
+                  <span class="experience__role">Diseño y animación 3D</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="education container" id="formacion">
+            <h2 class="education__title">Formación</h2>
+            <ul class="education__list">
+              <li class="education__item">
+                <div class="education__content">
+                  <div class="education__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="education__text">
+                    <h3 class="education__institution">ENSAD</h3>
+                    <span class="education__status">Egresado</span>
+                  </div>
+                </div>
+                <span class="education__year">2014-2018</span>
+              </li>
+              <li class="education__item">
+                <div class="education__content">
+                  <div class="education__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="education__text">
+                    <h3 class="education__institution">
+                      Master class Actuación
+                    </h3>
+                    <span class="education__status">Roberto Ángeles</span>
+                  </div>
+                </div>
+                <span class="education__year">2018</span>
+              </li>
+              <li class="education__item">
+                <div class="education__content">
+                  <div class="education__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="education__text">
+                    <h3 class="education__institution">
+                      Taller de dirección teatral
+                    </h3>
+                    <span class="education__status">David Carrillo</span>
+                  </div>
+                </div>
+                <span class="education__year">2020</span>
+              </li>
+              <li class="education__item">
+                <div class="education__content">
+                  <div class="education__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="education__text">
+                    <h3 class="education__institution">
+                      Taller de laboratorio de Impro
+                    </h3>
+                    <span class="education__status">Dusan Fung</span>
+                  </div>
+                </div>
+                <span class="education__year">2020</span>
+              </li>
+              <li class="education__item">
+                <div class="education__content">
+                  <div class="education__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="education__text">
+                    <h3 class="education__institution">
+                      Guión de ficción Audiovisual
+                    </h3>
+                    <span class="education__status"
+                      >Augusto Tamayo San Román</span
+                    >
+                  </div>
+                </div>
+                <span class="education__year">2020</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section class="contact container" id="contacto">
+          <h2 class="contact__title">Contáctame</h2>
+          <form class="contact__form">
+            <div class="contact__form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact__input"
+                required
+                placeholder=""
+              />
+              <label for="name" class="contact__label">Nombre</label>
+            </div>
+            <div class="contact__form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact__input"
+                required
+                placeholder=""
+              />
+              <label for="email" class="contact__label"
+                >Correo electrónico</label
+              >
+            </div>
+            <div class="contact__form-group">
+              <textarea
+                id="message"
+                name="message"
+                class="contact__textarea"
+                placeholder=""
+                required
+              ></textarea>
+              <label for="message" class="contact__label">Mensaje</label>
+            </div>
+            <div class="contact__form-group">
+              <button type="submit" class="contact__button">Enviar</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__text">
+        <h4 class="footer__title">
+          Jonathan <span class="footer__title--highlight">Trucios</span>
+        </h4>
+        <span class="footer__copyright">© Copyright 2024</span>
+      </div>
+      <span class="footer__credits">
+        Created by <a href="https://christian-tello.netlify.app/" class="footer__link">Christian Tello</a>
+      </span>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
